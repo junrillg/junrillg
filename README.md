@@ -11,7 +11,7 @@
 
 I turn business requirements into clear system boundaries, connected platforms, and practical AI workflows. I bring **12+ years of hands-on engineering** and **9+ years leading teams**, from client discovery through production delivery.
 
-**[Explore my portfolio and interactive 3D work →](https://junrillg.pages.dev/)** · [Get in touch](mailto:code.junrill@gmail.com)
+**[Explore my portfolio →](https://junrillg.pages.dev/)** · [Get in touch](mailto:code.junrill@gmail.com)
 
 ### How I help
 
