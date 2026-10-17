@@ -1,7 +1,7 @@
 <a href="https://junrillg.pages.dev/">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/architecture-still.png">
-    <img src="assets/architecture-motion.gif" alt="Junrill Galvez — Senior Software Engineer. Connected layers illustrate system design and AI integration." width="1200">
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/senior-engineer-still.png">
+    <img src="assets/senior-engineer-motion.gif" alt="Junrill Galvez — Senior Software Engineer. Connected layers illustrate system design and AI integration." width="1200">
   </picture>
 </a>
 

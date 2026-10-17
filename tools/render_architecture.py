@@ -121,8 +121,8 @@ def render(phase, font):
 def main(args):
     font = font_path(args.font)
     args.output.mkdir(parents=True, exist_ok=True)
-    still_path = args.output / "architecture-still.png"
-    motion_path = args.output / "architecture-motion.gif"
+    still_path = args.output / "senior-engineer-still.png"
+    motion_path = args.output / "senior-engineer-motion.gif"
     first = render(0, font)
     first.save(still_path, optimize=True)
     # One shared palette prevents flicker; exact frame timing is GIF-compatible.
