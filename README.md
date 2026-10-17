@@ -1,7 +1,7 @@
 <a href="https://junrillg.pages.dev/">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/architecture-still.png">
-    <img src="assets/architecture-motion.gif" alt="Junrill Galvez — Systems and Solutions Architect. Connected layers illustrate applications, services, data, and AI." width="1200" height="440">
+    <img src="assets/architecture-motion.gif" alt="Junrill Galvez — Systems and Solutions Architect. Connected layers illustrate applications, services, data, and AI." width="1200">
   </picture>
 </a>
 
