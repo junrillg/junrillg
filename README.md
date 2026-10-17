@@ -1,11 +1,13 @@
 <a href="https://junrillg.pages.dev/">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/architecture-still.png">
-    <img src="assets/architecture-motion.gif" alt="Junrill Galvez — Systems and Solutions Architect. Connected layers illustrate applications, services, data, and AI." width="1200">
+    <img src="assets/architecture-motion.gif" alt="Junrill Galvez — Senior Software Engineer. Connected layers illustrate system design and AI integration." width="1200">
   </picture>
 </a>
 
-## Systems Architect · Solutions Architect · AI Solutions
+## Senior Software Engineer
+
+**System Design & AI Integration**
 
 I turn business requirements into clear system boundaries, connected platforms, and practical AI workflows. I bring **12+ years of hands-on engineering** and **9+ years leading teams**, from client discovery through production delivery.
 
@@ -15,9 +17,9 @@ I turn business requirements into clear system boundaries, connected platforms, 
 
 | Focus | What I bring |
 | --- | --- |
-| Systems architecture | Domain modeling, service boundaries, APIs, data platforms, and independently testable components. |
-| Solutions architecture | Translate business needs into technical decisions, connect product workflows, and guide teams from scoping to delivery. |
-| AI solutions | LLM integration, structured data extraction, workflow automation, and managed cloud AI with AWS Bedrock. |
+| System design | Domain modeling, service boundaries, APIs, data platforms, and independently testable components. |
+| Technical delivery | Translate business needs into technical decisions, connect product workflows, and guide teams from scoping to delivery. |
+| AI integration | LLM integration, structured data extraction, workflow automation, and managed cloud AI with AWS Bedrock. |
 | Cloud & delivery | AWS, Kubernetes, Terraform, containerized deployments, and CI/CD. |
 
 ### Selected engineering outcomes

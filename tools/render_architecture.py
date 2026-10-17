@@ -66,9 +66,9 @@ def render(phase, font):
         line([(620, y), (1198, y)], (16, 17, 39))
     line([(48, 46), (112, 46)], ACCENT, 2)
     text((48, 92), "Junrill Galvez", 58)
-    text((51, 180), "Systems & Solutions", 34)
-    text((51, 223), "Architect", 34)
-    text((51, 290), "AI solutions · Cloud platforms", 24, (185, 181, 207))
+    text((51, 180), "Senior Software", 34)
+    text((51, 223), "Engineer", 34)
+    text((51, 290), "System Design · AI Integration", 24, (185, 181, 207))
     line([(51, 364), (499, 364)], (45, 43, 70))
     text((51, 381), "DESIGN THE SYSTEM. CONNECT THE PARTS.", 13, (157, 150, 181))
 
