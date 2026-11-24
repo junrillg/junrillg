@@ -7,9 +7,9 @@ from pathlib import Path
 
 WIDTH, HEIGHT, SCALE = 1200, 440, 2
 FRAMES, DURATION = 80, 70
-GROUND = (9, 10, 27)
-INK = (246, 245, 253)
-ACCENT = (185, 163, 251)
+GROUND = (10, 10, 10)
+INK = (238, 236, 232)
+ACCENT = (169, 171, 255)
 
 
 def arguments():
@@ -61,16 +61,15 @@ def render(phase, font):
 
     # A static field keeps GIF compression efficient and the diagram readable.
     for x in range(620, 1201, 40):
-        line([(x, 34), (x, 406)], (16, 17, 39))
+        line([(x, 34), (x, 406)], (27, 27, 27))
     for y in range(46, 407, 40):
-        line([(620, y), (1198, y)], (16, 17, 39))
-    line([(48, 46), (112, 46)], ACCENT, 2)
-    text((48, 92), "Junrill Galvez", 58)
-    text((51, 180), "Senior Software", 34)
-    text((51, 223), "Engineer", 34)
-    text((51, 290), "System Design · AI Integration", 24, (185, 181, 207))
-    line([(51, 364), (499, 364)], (45, 43, 70))
-    text((51, 381), "DESIGN THE SYSTEM. CONNECT THE PARTS.", 13, (157, 150, 181))
+        line([(620, y), (1198, y)], (27, 27, 27))
+    line([(52, 61), (87, 61)], ACCENT, 3)
+    text((99, 48), "Senior Software Engineer", 23)
+    text((46, 97), "Junrill", 92)
+    text((46, 187), "Galvez.", 92)
+    line([(51, 331), (513, 331)], (60, 60, 60))
+    text((51, 350), "System design & AI integration", 26, ACCENT)
 
     def project(point):
         return projection(point, phase)
@@ -81,48 +80,47 @@ def render(phase, font):
                    (x + width / 2, y + depth / 2, z), (x - width / 2, y + depth / 2, z)]
         upper = [project((a, b, c + height)) for a, b, c in corners]
         lower = [project(p) for p in corners]
-        polygon([upper[1], upper[2], lower[2], lower[1]], side, (96, 78, 137))
-        polygon([upper[2], upper[3], lower[3], lower[2]], front, (96, 78, 137))
-        polygon(upper, top, (157, 134, 207))
+        polygon([upper[1], upper[2], lower[2], lower[1]], side, (77, 78, 106))
+        polygon([upper[2], upper[3], lower[3], lower[2]], front, (77, 78, 106))
+        polygon(upper, top, (137, 138, 171))
 
     # Projection of a real XYZ scene: layers share a plane, nodes occupy height.
     for z, width, depth in [(0, 275, 204), (29, 244, 177), (58, 211, 150)]:
-        block((0, 0, z), width, depth, 12, (42, 35, 65), (28, 24, 47), (35, 29, 56))
+        block((0, 0, z), width, depth, 12, (47, 47, 53), (28, 28, 32), (37, 37, 42))
 
     nodes = [(-151, -71, 116), (115, -99, 145), (137, 89, 117)]
     center = (0, 0, 117)
     for index, endpoint in enumerate(nodes):
         elbow = (endpoint[0], 0, 117)
         points = [project(center), project(elbow), project(endpoint)]
-        line(points, (103, 83, 145), 1.5)
+        line(points, (122, 124, 181), 1.5)
         progress = (phase / (2 * math.pi) + index / 3) % 1
         segment = progress * 2
         start, end = points[min(int(segment), 1):min(int(segment), 1) + 2]
         blend = segment % 1
         px, py = (start[0] + (end[0] - start[0]) * blend, start[1] + (end[1] - start[1]) * blend)
-        draw.ellipse([xy((px - 3, py - 3)), xy((px + 3, py + 3))], fill=(223, 210, 255))
+        draw.ellipse([xy((px - 3, py - 3)), xy((px + 3, py + 3))], fill=INK)
 
     for index, (x, y, z) in enumerate(nodes):
         float_z = z + 3 * math.sin(phase + index * 2 * math.pi / 3)
-        line([project((x, y, 12)), project((x, y, float_z - 12))], (47, 40, 74))
-        block((x, y, float_z), 43, 43, 31, (115, 92, 158), (65, 47, 99), (84, 62, 122))
+        line([project((x, y, 12)), project((x, y, float_z - 12))], (66, 66, 78))
+        block((x, y, float_z), 43, 43, 31, (132, 134, 196), (61, 63, 128), (91, 95, 224))
         px, py = project((x, y, float_z + 32))
         draw.ellipse([xy((px - 3, py - 3)), xy((px + 3, py + 3))], fill=INK)
 
-    block((0, 0, 81), 84, 73, 52, (185, 163, 251), (90, 67, 136), (125, 98, 177))
+    block((0, 0, 81), 84, 73, 52, ACCENT, (69, 71, 158), (91, 95, 224))
     # Engraved circuit lines follow the upper face instead of a floating badge.
     for y in [-18, 0, 18]:
-        line([project((-25, y, 134)), project((25, y, 134))], (223, 209, 255), 1.5)
-    line([project((0, -26, 134)), project((0, 26, 134))], (223, 209, 255), 1.5)
-    text((805, 389), "CONCEPTUAL ARCHITECTURE", 12, (137, 126, 163))
+        line([project((-25, y, 134)), project((25, y, 134))], INK, 1.5)
+    line([project((0, -26, 134)), project((0, 26, 134))], INK, 1.5)
     return image.resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS)
 
 
 def main(args):
     font = font_path(args.font)
     args.output.mkdir(parents=True, exist_ok=True)
-    still_path = args.output / "senior-engineer-still.png"
-    motion_path = args.output / "senior-engineer-motion.gif"
+    still_path = args.output / "architecture-notes-still.png"
+    motion_path = args.output / "architecture-notes-motion.gif"
     first = render(0, font)
     first.save(still_path, optimize=True)
     # One shared palette prevents flicker; exact frame timing is GIF-compatible.

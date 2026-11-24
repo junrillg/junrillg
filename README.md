@@ -1,44 +1,34 @@
-<a href="https://junrillg.pages.dev/">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/senior-engineer-still.png">
-    <img src="assets/senior-engineer-motion.gif" alt="Junrill Galvez — Senior Software Engineer. Connected layers illustrate system design and AI integration." width="1200">
-  </picture>
-</a>
+<p align="center">
+  <a href="https://junrillg.pages.dev/">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/architecture-notes-still.png">
+      <img src="assets/architecture-notes-motion.gif" width="1200" alt="Junrill Galvez, Senior Software Engineer, beside an illustrated system of connected layers">
+    </picture>
+  </a>
+</p>
 
-## Senior Software Engineer
+<h1 align="center">Junrill Galvez</h1>
+<p align="center"><strong>Senior Software Engineer · System Design &amp; AI Integration</strong></p>
+<p align="center">
+  <a href="https://junrillg.pages.dev/#work">Explore the architecture notes</a> ·
+  <a href="https://junrillg.pages.dev/">Visit my portfolio</a> ·
+  <a href="mailto:code.junrill@gmail.com">Get in touch</a>
+</p>
 
-**System Design & AI Integration**
+I have 12+ years of hands-on engineering experience and 9+ years leading teams. I work on the parts of a system that have to hold up after launch, from how a change reaches a search index to how a release gets into production.
 
-I turn business requirements into clear system boundaries, connected platforms, and practical AI workflows. I bring **12+ years of hands-on engineering** and **9+ years leading teams**, from client discovery through production delivery.
+## Selected architecture notes
 
-**[Explore my portfolio →](https://junrillg.pages.dev/)** · [Get in touch](mailto:code.junrill@gmail.com)
-
-### How I help
-
-| Focus | What I bring |
+| Case | Engineering decision |
 | --- | --- |
-| System design | Domain modeling, service boundaries, APIs, data platforms, and independently testable components. |
-| Technical delivery | Translate business needs into technical decisions, connect product workflows, and guide teams from scoping to delivery. |
-| AI integration | LLM integration, structured data extraction, workflow automation, and managed cloud AI with AWS Bedrock. |
-| Cloud & delivery | AWS, Kubernetes, Terraform, containerized deployments, and CI/CD. |
+| Search indexing | How a change in the source data reaches a searchable index. |
+| Managed inference | Moving a self-hosted model workload to managed inference cut its running costs by about 75%. |
+| Parallel releases | Running CI/CD jobs in parallel and packaging releases in containers cut deployment time from two hours to five minutes. |
 
-### Selected engineering outcomes
+In the search diagram, select **Worker** to see how a saved record becomes a search document. My CQRS field guide goes deeper into the split between reads and writes. [Interactive notes](https://junrillg.pages.dev/#work) · [CQRS field guide](https://github.com/junrillg/system-design-patterns/tree/main/docs/cqrs).
 
-- **~75% lower AI running costs** after migrating LLM workloads from self-hosted models to managed cloud AI.
-- **Two-hour deployments reduced to five minutes** through parallel CI/CD jobs and containerized releases.
-- **Backend and platform architecture for a product serving 25,000+ users by 2020**, connecting property, cashflow, and budgeting workflows.
-- **Clearer service boundaries in a legacy platform** using layered architecture, Domain-Driven Design, and CQRS, alongside code review standards and mentoring.
+## Engineering background
 
-[Read the work behind these outcomes →](https://junrillg.pages.dev/#work)
+I’ve restructured a legacy codebase around domain boundaries and separate command and query paths. Earlier, I helped shape the backend for a financial planning platform that served more than 25,000 users by 2020.
 
-### Tools I work with
-
-**Engineering:** C# / .NET · TypeScript · React / Next.js · Python / Django / Flask · Node.js / GraphQL
-
-**Cloud & AI:** AWS EKS / RDS / Bedrock · Kubernetes · Terraform · LLM integration
-
-**Data & design:** PostgreSQL · SQL Server · MySQL · Redis · DDD · CQRS · Clean Architecture
-
----
-
-[Portfolio](https://junrillg.pages.dev/) · [GitHub Pages entry point](https://junrillg.github.io/) · [code.junrill@gmail.com](mailto:code.junrill@gmail.com)
+I work with C# and .NET, TypeScript and React, Python and Django, and infrastructure on AWS. PostgreSQL, Kubernetes, Terraform, and Bedrock are among the tools I use to take a design into production.
