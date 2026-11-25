@@ -15,17 +15,17 @@
   <a href="mailto:code.junrill@gmail.com">Get in touch</a>
 </p>
 
-I have 12+ years of hands-on engineering experience and 9+ years leading teams. I work on the parts of a system that have to hold up after launch, from how a change reaches a search index to how a release gets into production.
+I build hiring and financial software. I have 12+ years in full-stack engineering and 9+ years leading teams of up to 10. On a hiring platform, I moved AI processing to AWS Bedrock and cut AI running costs by about 75%. I also helped shorten deployments from two hours to five minutes by parallelizing pipeline jobs and automating release steps.
 
-## Selected architecture notes
+## Selected projects
 
-| Case | Engineering decision |
+| Project | What you can inspect |
 | --- | --- |
-| Search indexing | How a change in the source data reaches a searchable index. |
-| Managed inference | Moving a self-hosted model workload to managed inference cut its running costs by about 75%. |
-| Parallel releases | Running CI/CD jobs in parallel and packaging releases in containers cut deployment time from two hours to five minutes. |
+| [Résumé matching](https://github.com/junrillg/resume-match-bedrock) | A reviewer chooses job requirements and sees which ones have supporting passages in a résumé. |
+| [Candidate assessment](https://github.com/junrillg/candidate-assessment-lab) | How a candidate recovers an offline answer and how a reviewer publishes the final score. |
+| [Approval workflow migration](https://github.com/junrillg/strangler-fig-razor-react) | A working approval app and my plan to replace one page while keeping records consistent. |
 
-In the search diagram, select **Worker** to see how a saved record becomes a search document. My CQRS field guide goes deeper into the split between reads and writes. [Interactive notes](https://junrillg.pages.dev/#work) · [CQRS field guide](https://github.com/junrillg/system-design-patterns/tree/main/docs/cqrs).
+The portfolio walks through the decisions behind these projects. My CQRS field guide explains when it makes sense to separate reads from writes. [Interactive cases](https://junrillg.pages.dev/#work) · [CQRS field guide](https://github.com/junrillg/system-design-patterns/tree/main/docs/cqrs).
 
 ## Engineering background
 
